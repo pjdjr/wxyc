@@ -57,7 +57,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 	//Hashmap for ListView
 	ArrayList<HashMap<String, String>> playList;
 	
-	
 	private ProgressDialog pd;
 	
 	@Override
@@ -76,7 +75,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
@@ -98,10 +96,8 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 	 * A placeholder fragment containing a simple view.
 	 */
 	public static class PlaceholderFragment extends Fragment {
-
 		public PlaceholderFragment() {
 		}
-
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
@@ -166,9 +162,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			setContentView(R.layout.activity_main);
 	        TextView textView = (TextView) findViewById(R.id.nowPlaying);
 	        textView.setText("Now Playing: \"" + playlistHashMap.get(TAG_SONG_TITLE) + "\" by " + playlistHashMap.get(TAG_ARTIST_NAME));
-	        
-	        
-	        
+
 //	        pd.dismiss();
 //	        setContentView(R.layout.activity_main);
 //	        TextView textView = (TextView) findViewById(R.id.nowPlaying);
@@ -177,8 +171,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 //?	        ListView lv = getListView();
 		}	
 	}
-	
-
 	
 	private HashMap extractNodes(JSONArray jArray) {
 	  //playList = new ArrayList<HashMap<String, String>>();
@@ -232,8 +224,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		return playlistHashMap;
 	  //}
 	}
-	
-	
+		
 	public static String capitalize(String str) {
 	    return capitalize(str, null);
 	}
@@ -286,14 +277,4 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
         return capitalize(str, delimiters);
     }
 	
-	
-	
-	
-	
 }
-		
-		
-		
-		
-		
-		
