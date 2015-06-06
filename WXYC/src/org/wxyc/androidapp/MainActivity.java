@@ -29,6 +29,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener {
 
@@ -69,7 +70,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 //					.add(R.id.container, new PlaceholderFragment()).commit();
 //		}
 	    // Add Click listener for the button
-		View theButton = findViewById(R.id.playButton);
+		ToggleButton theButton = (ToggleButton) findViewById(R.id.playButton);
 		theButton.setOnClickListener(this);
 	}
 
